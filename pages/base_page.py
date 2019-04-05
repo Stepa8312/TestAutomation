@@ -14,6 +14,6 @@ class BasePage(object):
         btn = self.driver.find_element(*self.cookieAcceptBtn)
         btn.click()
 
-    def save_screenshot(self, path):
+    def save_screenshot(self):
         timestamp = str(time.time())
         self.driver.get_screenshot_as_file("..\\screenshots\\" + timestamp + ".png")
