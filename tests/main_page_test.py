@@ -12,3 +12,4 @@ class MainPageTests(EnvironmentSetup):
         page.main_page.search_product('laptop')
         page.main_page.switch_to_list_view()
         page.main_page.select_product_in_list(3)
+        page.main_page.save_screenshot()
