@@ -44,3 +44,6 @@ class MainPage(BasePage):
         product.location_once_scrolled_into_view
         time.sleep(1)
         product.click()
+        wait = WebDriverWait(self.driver, 10)
+        wait.until(ec.url_changes)
+
